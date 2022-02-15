@@ -43,7 +43,7 @@ const App = () => {
   console.log("users",users);
   return (
     <div className="App">
-      <input
+      <input style={{marginTop:"50px",marginRight:"10px",marginLeft:"100px",height:"25px"}}
         placeholder="Name..."
         onChange={(event) => {
           setNewitem(event.target.value);
@@ -85,7 +85,7 @@ const App = () => {
                       >
                         <DragHandle {...provided.dragHandleProps} />
                         <span>{item.item}</span>
-                        <button onClick={()=>deleteitem(item.id)}>Delete</button>
+                        <button style={{marginLeft:"400px"}} onClick={()=>deleteitem(item.id)}>Delete</button>
                       </ListItem>
                     )}
                   </Draggable>
